@@ -1,0 +1,168 @@
+html, body, #app {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    overflow-y: hidden;
+}
+body{
+    background-image: url("../Images/caveavin.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#login{
+    width: 40%;
+    height: 100%;
+    position: relative;
+    background-color: rgba(122, 116, 116, 0.74);
+}
+#form{
+    position: relative;
+    top: 25%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    width: 100%;
+    text-align: center;
+    background-color: rgba(10, 10, 10, 0.781);
+}
+#form label{
+    color: white;
+}
+#form input{
+    margin: 6px 10px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    cursor:pointer;
+    margin-bottom: 15px;
+}
+#submit{
+    margin-top: 20px !important;
+}
+#categorie, #product, #infoprod{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(26, 24, 24, 0.705);
+    color: white;
+    text-align: center;
+    display: none;
+    position: relative;
+    left: -100%;
+}
+.categ{
+    background-color: rgba(245, 245, 245, 0.808);
+    width: 300px;
+    height: 100px;
+    margin: 0 10%;
+    padding-top: 95px;
+    margin-bottom: 10%;
+    color: black;
+}
+#categori,#produ{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: auto;
+    height: auto;
+    position: absolute;
+    top:180px;
+    bottom:0px;
+}
+.prodct{
+    background-color: rgba(245, 245, 245, 0.808);
+    width: 200px;
+    height: 200px;
+    margin: 0 5%;
+    margin-bottom: 10%;
+    overflow: hidden;
+    color: black;
+}
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    display: none;
+    justify-content: space-around;
+    background-color: white;
+    padding: 10px;
+}
+h2{
+    margin-top: 0;
+    padding-top: 50px;
+    margin-bottom: 70px;
+}
+.imgvin{
+    width: 20%;
+}
+.imgprd{
+    width: 100px;
+    border: 5px solid black;
+    background-color: white;
+}
+.ajust{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#info{
+    background-color: rgba(245, 245, 245, 0.767);
+    color: black;
+}
+.imgdrp{
+    width: 45%;
+    height: 100%;
+}
+
+@media screen and (max-width:750px){
+    #login {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        left: 0;
+        background-color: rgba(122, 116, 116, 0.74);
+    }
+    #form input{
+        padding:15px 0px;
+        font-size: 1.5em;
+    }
+    #form{
+        top:35%;
+    }
+}
+#title {
+    position: relative;
+    top: 15%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    border: none;
+    font: normal 75px/normal "monoton", Helvetica, sans-serif;
+    color: rgba(210,210,210,1);
+    text-decoration: normal;
+    text-align: center;
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    white-space: pre;
+    text-shadow: 0 0 10px rgba(210,210,210,1) , 0 0 20px rgba(210,210,210,1) , 0 0 30px rgba(210,210,210,1) , 0 0 40px #ff0022 , 0 0 70px #ff002b , 0 0 80px #ff0000 , 0 0 100px #ff0040 ;
+    -webkit-transition: all 200ms cubic-bezier(0.895, 0.03, 0.685, 0.22);
+    -moz-transition: all 200ms cubic-bezier(0.895, 0.03, 0.685, 0.22);
+    -o-transition: all 200ms cubic-bezier(0.895, 0.03, 0.685, 0.22);
+    transition: all 200ms cubic-bezier(0.895, 0.03, 0.685, 0.22);
+    -webkit-transform: rotateX(1.1459155902616465deg) rotateY(4.583662361046586deg)   ;
+    transform: rotateX(1.1459155902616465deg) rotateY(4.583662361046586deg)   ;
+}
+  
+#title:hover {
+    font: normal 75px/normal "monoton", Helvetica, sans-serif;
+    text-shadow: 0 0 10px rgba(210,210,210,1) , 0 0 20px rgba(210,210,210,1) , 0 0 30px rgba(210,210,210,1) , 0 0 40px #ff00f2 , 0 0 70px #ff00c8 , 0 0 80px #ff00ea , 0 0 100px #ea00ff ;
+    -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    -webkit-transform: none;
+    transform: none;
+}

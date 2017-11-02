@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Typescript </title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <script type="text/javascript" script-name="monoton" src="http://use.edgefonts.net/monoton.js"></script>
+    <link async href="http://fonts.googleapis.com/css?family=Warnes" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div class="sect">
+        <div id="landing-cover">
+            <div class="layer bglayer"></div>
+            <div class="layer frontlayer"></div>
+        </div>
+        <div class="overlay">
+            <nav>
+                <div id="logout">
+                    LogOut
+                </div>
+                <div id="return" class="cat">
+                    Return
+                </div>
+            </nav>
+            <div id="login">
+                <div id="title">WINES</div>
+                <form id="form">
+                    <label for="name">Username</label>
+                    <input type="text" name="name" id="name" value="Paul">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" value="azertyuiop">
+                    <input id="submit" type="submit" value="Connect">
+                </form>
+            </div>
+            <div id="categorie">
+                <h2>Categories</h2>
+                <div id="categori"></div>
+            </div>
+            <div id="product">
+                <h2>Product</h2>
+                <div id="produ"></div>
+            </div>
+            <div id="infoprod">
+                <h2>Info</h2>
+                <div id="info"></div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="node_modules/systemjs/dist/system.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script
+    src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+    integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+    crossorigin="anonymous"></script>
+    <script src="JS/js.js"></script>
+    <script src="JS/main.js"></script>
+    <script>
+        System.import('main')
+          .catch(function(err){ console.error(err); });
+    </script>
+</body>
+</html>
